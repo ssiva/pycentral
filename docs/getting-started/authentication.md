@@ -86,11 +86,7 @@ Identifies your Central Account's API gateway. Both options function identically
 
 **Custom Token Endpoint** _(Central On-Prem only)_:
 
-For Central On-Prem deployments whose OAuth issuer differs from the
-standard Cloud issuer, set `token_endpoint` to the complete token URL.
-The SDK uses it for initial token creation and automatic renewal.
-`base_url` remains the Central API URL and may use a different host.
-This option is supported only under `new_central`.
+For Central On-Prem deployments whose OAuth issuer differs from the standard GLP OAuth issuer, set `token_endpoint` to the complete token URL. The SDK uses it for initial token creation and automatic renewal. `base_url` remains the Central API URL for the On-Prem account. **This option is supported only under `new_central`.**
 
 ```python
 token_info = {
